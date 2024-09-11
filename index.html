@@ -27,9 +27,9 @@
                 <li><a href="#producto">Biofertilizante</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </nav>
+        </nav>  
     </header>
-
+<main>
     <!-- Sección de home -->
     <section class="Home" id="Home">
         <div class="fade-in-image">
@@ -45,7 +45,7 @@
     <section class="nosotros" id="nosotros">
             <h2>Sobre Nosotros</h2><hr>
                 <p><b>Somos una empresa que desarrolla soluciones a partir de biotecnología,</b> contamos con más de 10 años de experiencia en tratamiento de aguas residuales,<br> bioprocesos, ingeniería metabólica, cultivo de plantas, bioingeniería, producción de biocombustibles y biomateriales a partir del uso de microorganismos.</p>
-                <b> Nuestro proyecto se inspira en la problemática ambiental</b> que actualmente existe nos enfocamos en temas a nivel global como la escasez del agua y su contaminación,<br> así como el arribo del sargazo en playas y la contaminación que hay actualmente por el excesivo uso de fertilizantes químicos, lo cual, <br>además impacta en la seguridad alimentaria a nivel mundial.</p>
+              <p> <b> Nuestro proyecto se inspira en la problemática ambiental</b> que actualmente existe nos enfocamos en temas a nivel global como la escasez del agua y su contaminación,<br> así como el arribo del sargazo en playas y la contaminación que hay actualmente por el excesivo uso de fertilizantes químicos, lo cual, <br>además impacta en la seguridad alimentaria a nivel mundial.</p>
     </section>
 
             <!-- Sección Objetivo misión y vision-->
@@ -70,6 +70,7 @@
 
     <!-- Llamada a la Acción -->
     <section class="cta">
+        <img src="10years.png" alt="10 años">
         <p>"Sembremos el futuro de manera sostenible"</p>
         <a href="#contacto" class="btn">¡Contáctanos para más información!</a>
     </section>
@@ -96,16 +97,70 @@
             </div>
         </div>
         <p>Derivado de la aportación nutrimental, <b>obtendremos PLANTAS
-            más fuertes y sanas, evitando así el uso de plaguicidad</b></p>
+            más fuertes y sanas, evitando así el uso de plaguicidas</b></p>
     </section>
-
+</main>
     <!-- Sección de Contacto -->
-    <footer class="contacto" id="contacto">
-        <h2>Contacto</h2>
-        <p>Tel: +52 8404 9348 / +52 1538 9120</p>
-    </footer>
+    
+        <div class="contact_form" id="contacto">
+
+            <div class="formulario">			
+          <h1>Contactanos</h1>
+                    <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+    
+    
+                        <form action="submeter-formulario.php" method="post">				
+    
+                            
+                                    <p>
+                                        <label for="nombre" class="colocar_nombre">Nombre
+                                            <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                                    </p>
+                                
+                                    <p>
+                                        <label for="email" class="colocar_email">Email
+                                            <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                                    </p>
+                                
+                              
+                                    <p>
+                                        <label for="asunto" class="colocar_asunto">Asunto
+                                            <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                                    </p>		
+                                
+                                    <p>
+                                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                                            <span class="obligatorio">*</span>
+                                        </label>                     
+                                             <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                       </p>	  								
+                                
+                                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+    
+                                    <p class="aviso">
+                                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                                    </p>					
+                            
+                        </form>
+            </div>	
+        </div>
+    
+
+
+    <footer class=="copyright">© 2024 
+        <div class="container">
+          <span class="text-body-secondary">Designed by Jony Reyes</span>
+        </div>
+      </footer>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
    
 </html>
+
