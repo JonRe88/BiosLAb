@@ -75,6 +75,11 @@ section {
     max-width: 100%;
     height: auto;
 }
+.fade-in-image { animation: fadeIn 5s; }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .verde {
     background-color: rgb(116, 187, 10);
