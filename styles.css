@@ -1,22 +1,26 @@
 /* Estilos generales */
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 
+main{
+    width: 100%;
+    text-align: center;
+}
+
 body {
     font-family: "Alegreya Sans", sans-serif;
     background-color: #ffffff;
     color: #333;
-    padding: 1rem;
-    margin: 0;
-    box-sizing: border-box;
+    text-align: center;
 }
 
 /* Estilos del encabezado */
 header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     background-color: hsl(60, 50%, 99%);
-    padding: 1rem;
+    padding: .5rem;
+    width: 100%;
 }
 
 .logo img {
@@ -40,7 +44,7 @@ nav {
 }
 
 .hamburger span {
-    background-color: #333;
+    background-color: #57ce20;
     height: 4px;
     width: 100%;
     border-radius: 5px;
@@ -61,13 +65,13 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #52bc32;
+    color: #60c043;
 }
 
 /* Estilos de las secciones */
 section {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .Home img {
@@ -75,17 +79,44 @@ section {
     max-width: 100%;
     height: auto;
 }
-.fade-in-image { animation: fadeIn 5s; }
+.fade-in-image { 
+    animation: fadeIn 10s;
+    -webkit-animation: fadeIn 10s;
+    -moz-animation: fadeIn 10s;
+    -o-animation: fadeIn 10s;
+    -ms-animation: fadeIn 10s; }
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
 
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 .verde {
     background-color: rgb(116, 187, 10);
+   
+}
+.verde p {
     color: white;
-    font-size: 2rem;
-    padding: 2rem;
+    font-size: 3rem;
 }
 
 hr {
@@ -93,19 +124,21 @@ hr {
     height: 3px;
     width: 100px;
     border-radius: 1px;
-    margin: 1rem auto;
     display: flex;
 }
 
 .nosotros {
     background-color: rgba(38, 174, 174, 0.429);
-    padding: 2rem;
+    padding: 4rem;
     min-height: 600px;
 }
 
 .nosotros h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 0px 10px 30px rgb(3, 215, 123);
+}
+.nosotros p{
+    font-size: 1.2rem;
 }
 
 .objetivo {
@@ -115,19 +148,26 @@ hr {
 
 .objetivo h2 {
     padding-top: 30px;
-    font-size: 2rem;
-    text-shadow: #4a8f5c;
+    font-size: 3rem;
+    text-shadow: 0px 10px 30px rgb(3, 215, 123);
 }
 
 .objetivo img {
-    max-width: 100%;
-    height: auto;
+    max-width: 60%;
 }
-
+.objetivo p {
+    font-size: 1.2rem;
+}
+.objetivo h4 {
+    font-size: 1.5rem;
+}
+.cta img {
+    max-width: 50%;
+}
 .cta {
     background-color: #5db443;
     color: white;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .cta p {
@@ -138,16 +178,27 @@ hr {
 .btn {
     background-color: rgb(0, 136, 255);
     color: white;
-    padding: 0.75rem 1.5rem;
+    padding: 0.1rem .1rem;
     border: none;
-    border-radius: 15px;
-    font-size: 1.125rem;
+    border-radius: 5px;
+    font-size: 1rem;
     text-decoration: none;
 }
 
 .btn:hover {
     background-color: #73ff00;
     color: rgb(17, 0, 255);
+}
+.producto h2{
+    font-size: 3rem;
+    text-shadow: 0px 10px 30px rgb(3, 215, 123);
+}
+.producto p{
+    font-size: 2em;
+}
+.beneficios h4{
+    font-size: 2em;
+    text-align: center;
 }
 
 .beneficios {
@@ -156,17 +207,151 @@ hr {
     gap: 1rem;
     justify-content: center;
 }
+.beneficios p{
+    font-size: 1.3rem;
+}
 
-.beneficio {
+.beneficio  {
     flex: 1 1 300px;
     max-width: 500px;
-    text-align: left;
+    text-align: center;
 }
 
 .beneficio img {
-    width: 100%;
-    margin-bottom: 1rem;
+    width: 50%;
+    margin-bottom: 1px;
+    align-items: center;
 }
+
+.contacto {
+    background-color: rgb(158, 237, 32);
+    font-size: 2rem;
+}
+    .contacto h2 {
+    text-shadow: 0px 10px 30px rgb(3, 215, 123); 
+}
+.contact_form{	
+	width: 100%; 
+    height: auto;
+    margin: 30px auto;
+	border-radius: 5px;  
+	padding-top: 10px;
+	padding-bottom: 10px;  
+  background-color: #f0ff2454; 
+  padding-left: 0px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 300px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #a1ab44; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 300px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #12055d; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #7bab44; 
+	border-color: #445eab; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 250px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: #1c6992; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #136109;
+    text-shadow: 0px 10px 30px rgb(3, 215, 123);
+}
+
+
+h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #1307bc;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #92db39;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
 
 /* Estilos del pie de página */
 footer {
@@ -185,12 +370,12 @@ footer p {
     .nav-links {
         display: none;
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 0;
-        background-color: rgb(246, 255, 122);
+        background-color: rgb(111, 232, 212);
         flex-direction: column;
-        width: 200px;
-        border-radius: 30px;
+        width: 150px;
+        border-radius: 20px;
         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     }
 
@@ -203,7 +388,18 @@ footer p {
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 0px 0;
         text-align: center;
     }
+
+    .objetivo img {
+    max-width: 0%;
+    }
+    .Home img {
+        padding-top: 2rem;
+        max-width: 40%;
+        height: auto;
+    }
+
+
 }
